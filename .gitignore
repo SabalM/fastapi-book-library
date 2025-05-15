@@ -1,0 +1,19 @@
+# Python bytecode and virtual env
+__pycache__/
+*.py[cod]
+venv/
+.venv
+.env 
+env/
+.mypy_cache/
+.pytest_cache/
+
+# MkDocs build output
+/site/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

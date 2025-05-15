@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Library Search</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h1>Search Books</h1>
+  <form method="get" action="/ui">
+    <input
+      type="text"
+      name="title"
+      placeholder="Enter book title"
+      required
+      value="{{ title | default('') }}"
+    />
+    <button type="submit">Search</button>
+  </form>
+
+  {% if results %}
+  <div class="results">
+    <h2>Results</h2>
+    {% for book in results %}
+      <div class="book">
+        <strong>{{ book.title }}</strong><br />
+        Author: {{ book.author }}<br />
+        First Published: {{ book.year }}
+      </div>
+    {% endfor %}
+  </div>
+  {% elif title %}
+    <p>No results found for "{{ title }}".</p>
+  {% endif %}
+</body>
+</html>
