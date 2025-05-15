@@ -13,7 +13,7 @@ Includes a clean HTML UI, REST API, testing, Docker support, GitHub CI, and opti
 -  Pytest-based test 
 -  Pre-commit hooks
 -  GitHub Actions CI workflow
-<!-- -  MkDocs for project documentation -->
+-  MkDocs for project documentation
 -  VS Code config + extensions
 
 ---
@@ -47,3 +47,9 @@ uvicorn app.main:app --reload
 ```
 
 Visit: http://127.0.0.1:8000/ui
+
+### 4. Open Mkdocs
+
+```bash
+mkdocs serve
+```
