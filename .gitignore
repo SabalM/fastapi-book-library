@@ -11,9 +11,6 @@ env/
 # MkDocs build output
 /site/
 
-# VS Code
-.vscode/
-
 # OS
 .DS_Store
 Thumbs.db
