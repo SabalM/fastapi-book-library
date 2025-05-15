@@ -10,4 +10,11 @@ This API allows you to search and catalog books using Open Library.
 
 - Search books by title
 - Get book details
-- Simple, RESTful API
+- Simple RESTful API
+- Simple UI using Jinja2 templates
+- Dockerized for easy deployment
+- Pytest-based test 
+- Pre-commit hooks
+- GitHub Actions CI workflow
+- MkDocs for project documentation
+- VS Code config + extensions
