@@ -29,4 +29,5 @@ def book_search_ui(request: Request, title: str = None):
                 }
                 for book in data.get("docs", [])[:5]
             ]
-    return templates.TemplateResponse("search.html", {"request": request, "results": results, "title": title})
+    return templates.TemplateResponse(request, "search.html", {"results": results, "title": title})
+
